@@ -11,7 +11,7 @@ client.on('ready',()=>{
 
 client.on('message',message=>{
     console.log(message.content)
-    fs.appendFile('/Users/kuba/DiscordProcessMsg/messagesContent.txt', message.content+'\n', function (err) {
+    fs.appendFile('messagesContent.txt', message.content+'\n', function (err) {
         if (err) throw err;
         console.log('Updated!');
 });
